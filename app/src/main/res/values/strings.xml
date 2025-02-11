@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Forge</string>
+
+    <!-- top bar -->
+    <string name="top_app_bar_content_description">Back Button</string>
+    <string name="top_app_bar_button_action">Action Button</string>
+
+    <!-- HomeScreen -->
+    <string name="home_screen_top_bar_title">Training</string>
 </resources>
