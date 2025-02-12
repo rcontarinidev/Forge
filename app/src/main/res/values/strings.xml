@@ -7,4 +7,6 @@
 
     <!-- HomeScreen -->
     <string name="home_screen_top_bar_title">Training</string>
+    <string name="home_screen_quick_start">Quick Start</string>
+    <string name="home_screen_start_empty_training">Start empty training</string>
 </resources>
