@@ -39,7 +39,7 @@ fun PrimaryButton(
             disabledContentColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f),
             disabledContainerColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f),
         ),
-        shape = RoundedCornerShape(Spacing.Large)
+        shape = RoundedCornerShape(Spacing.Medium)
     ) {
 
         Row(
@@ -53,6 +53,7 @@ fun PrimaryButton(
                         .padding(end = Spacing.Medium),
                     imageVector = icon,
                     contentDescription = "",
+                    tint = contentColor
                 )
             }
             Text(

@@ -8,5 +8,9 @@
     <!-- HomeScreen -->
     <string name="home_screen_top_bar_title">Training</string>
     <string name="home_screen_quick_start">Quick Start</string>
+    <string name="home_screen_routines">Routines</string>
     <string name="home_screen_start_empty_training">Start empty training</string>
+    <string name="home_screen_routines_button">New Routine</string>
+    <string name="home_screen_start_routine_button">Start Routine</string>
+    <string name="home_screen_my_routines">My Routines</string>
 </resources>
