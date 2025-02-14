@@ -1,6 +1,5 @@
 package com.rcontarini.forge.ui.screen
 
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -14,20 +13,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontStyle
 import com.rcontarini.forge.R
 import com.rcontarini.forge.domain.RoutineModel
 import com.rcontarini.forge.ui.components.ForgeTopAppBar
 import com.rcontarini.forge.ui.components.PrimaryButton
-import com.rcontarini.forge.ui.components.RoutineCard
 import com.rcontarini.forge.ui.components.RoutineList
 import com.rcontarini.forge.ui.theme.Spacing
 
 @Composable
 fun HomeScreen(
     modifier: Modifier = Modifier,
-    listRoutine: List<RoutineModel>
+    listRoutine: List<RoutineModel>,
+    onRoutineClicked: () -> Unit
 ) {
     Scaffold(
         modifier = modifier,
@@ -82,7 +79,9 @@ fun HomeScreen(
                         Spacing.Large
                     ),
                 title = stringResource(R.string.home_screen_routines_button),
-                actionButton = {},
+                actionButton = {
+                    onRoutineClicked.invoke()
+                },
                 icon = Icons.Default.AccountBox
             )
 
