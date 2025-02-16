@@ -16,4 +16,8 @@
 
     <!-- RoutineScreen -->
     <string name="routine_screen_top_bar_title">Create Routine</string>
+    <string name="routine_screen_text_title">Routine Title</string>
+    <string name="routine_screen_button_add_exercise_title">Add Exercise</string>
+    <string name="routine_screen_empty_message">Start for add a exercise into routine</string>
+    <string name="routine_screen_icon_content_description">Icon that represent empty screen</string>
 </resources>

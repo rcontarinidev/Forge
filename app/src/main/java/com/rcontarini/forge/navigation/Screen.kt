@@ -1,6 +1,7 @@
 package com.rcontarini.forge.navigation
 
 sealed class Screen(val route: String) {
-    object Home: Screen("Home")
-    object Routine: Screen("Routine")
+    data object Home: Screen("Home")
+    data object Routine: Screen("Routine")
+    data object AddExercise: Screen("Add Exercise")
 }

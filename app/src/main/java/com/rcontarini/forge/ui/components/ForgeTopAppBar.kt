@@ -39,7 +39,7 @@ fun ForgeTopAppBar(
                 Text(
                     text = title,
                     color = MaterialTheme.colorScheme.background,
-                    style = MaterialTheme.typography.titleLarge
+                    style = MaterialTheme.typography.titleMedium
                 )
             }
 
