@@ -15,6 +15,7 @@ object Spacing {
 
     val Huge = 48.dp
     val Massive = 64.dp
+    val XXMassive = 72.dp
 
     val Default = 12.dp
 }
