@@ -25,7 +25,7 @@ fun ExerciseList(
             ExerciseCard(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = Spacing.Large),
+                    .padding(top = Spacing.Medium),
                 onExerciseSelected = { /* not implemented yet */},
                 exerciseModel = item,
                 isSelected = false

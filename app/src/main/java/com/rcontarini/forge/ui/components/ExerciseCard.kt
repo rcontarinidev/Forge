@@ -1,5 +1,6 @@
 package com.rcontarini.forge.ui.components
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -12,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material3.Card
@@ -38,18 +40,18 @@ fun ExerciseCard(
             defaultElevation = Spacing.ExtraSmall
         ),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.background,
-            disabledContentColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.38f),
-            disabledContainerColor = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.12f),
+            containerColor = Color.White,
             contentColor = MaterialTheme.colorScheme.primary
         ),
+        shape = RoundedCornerShape(Spacing.Small),
         onClick = onExerciseSelected
     ) {
 
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .height(Spacing.XXMassive)
+                .height(Spacing.XXMassive),
+            verticalAlignment = Alignment.CenterVertically
         ) {
             Box(
                 modifier = Modifier
@@ -65,8 +67,7 @@ fun ExerciseCard(
                         start = Spacing.Small
                     ),
                 imageVector = Icons.Default.AccountBox,
-                contentDescription = "",
-                alignment = Alignment.Center,
+                contentDescription = ""
             )
 
             Column(
@@ -84,7 +85,7 @@ fun ExerciseCard(
                     modifier = Modifier
                         .padding(top = Spacing.Small),
                     text = exerciseModel.typeExercise.title,
-                    style = MaterialTheme.typography.titleMedium
+                    style = MaterialTheme.typography.bodyMedium
                 )
             }
         }
