@@ -1,5 +1,8 @@
 package com.rcontarini.forge.domain
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class ExerciseModel(
     val id: Int,
     val title: String,
