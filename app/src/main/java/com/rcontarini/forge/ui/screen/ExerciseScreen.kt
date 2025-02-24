@@ -32,12 +32,12 @@ fun ExerciseScreen(
             id = 1,
             title = "Supino Reto",
             description = "Exercício para peitoral com barra.",
-            typeExercise = TypeExerciseModel("Força"),
+            typeExercise = TypeExerciseModel("Força", "Força A"),
             url = "https://exemplo.com/supino.jpg",
             creationDate = "2024-02-17",
             listExercisesSerie = listOf(
-                ExercisesSerieModel(ExerciseModel(1, "Supino", "", TypeExerciseModel("Força"), "", "", listOf(), StatusEnum.COMPLETED), 3, 50, 10, StatusEnum.COMPLETED),
-                ExercisesSerieModel(ExerciseModel(1, "Supino", "", TypeExerciseModel("Força"), "", "", listOf(), StatusEnum.COMPLETED), 3, 60, 8, StatusEnum.COMPLETED)
+                ExercisesSerieModel(ExerciseModel(1, "Supino", "", TypeExerciseModel("Força", "Força A"), "", "", listOf(), StatusEnum.COMPLETED), 3, 50, 10, StatusEnum.COMPLETED),
+                ExercisesSerieModel(ExerciseModel(1, "Supino", "", TypeExerciseModel("Força", "Força A"), "", "", listOf(), StatusEnum.COMPLETED), 3, 60, 8, StatusEnum.COMPLETED)
             ),
             status = StatusEnum.COMPLETED
         ),
@@ -45,11 +45,11 @@ fun ExerciseScreen(
             id = 2,
             title = "Agachamento Livre",
             description = "Exercício para pernas e glúteos.",
-            typeExercise = TypeExerciseModel("Força"),
+            typeExercise = TypeExerciseModel("Força","Força A"),
             url = "https://exemplo.com/agachamento.jpg",
             creationDate = "2024-02-17",
             listExercisesSerie = listOf(
-                ExercisesSerieModel(ExerciseModel(2, "Agachamento", "", TypeExerciseModel("Força"), "", "", listOf(), StatusEnum.COMPLETED), 4, 80, 12, StatusEnum.COMPLETED)
+                ExercisesSerieModel(ExerciseModel(2, "Agachamento", "", TypeExerciseModel("Força", "Força A"), "", "", listOf(), StatusEnum.COMPLETED), 4, 80, 12, StatusEnum.COMPLETED)
             ),
             status = StatusEnum.COMPLETED
         ),
@@ -57,11 +57,11 @@ fun ExerciseScreen(
             id = 3,
             title = "Rosca Direta",
             description = "Exercício para bíceps com halteres.",
-            typeExercise = TypeExerciseModel("Hipertrofia"),
+            typeExercise = TypeExerciseModel("Hipertrofia","Força A"),
             url = "https://exemplo.com/rosca.jpg",
             creationDate = "2024-02-17",
             listExercisesSerie = listOf(
-                ExercisesSerieModel(ExerciseModel(3, "Rosca Direta", "", TypeExerciseModel("Hipertrofia"), "", "", listOf(), StatusEnum.COMPLETED), 3, 15, 12, StatusEnum.COMPLETED)
+                ExercisesSerieModel(ExerciseModel(3, "Rosca Direta", "", TypeExerciseModel("Hipertrofia", "Força A"), "", "", listOf(), StatusEnum.COMPLETED), 3, 15, 12, StatusEnum.COMPLETED)
             ),
             status = StatusEnum.COMPLETED
         ),
@@ -69,11 +69,11 @@ fun ExerciseScreen(
             id = 4,
             title = "Prancha",
             description = "Exercício para core e resistência.",
-            typeExercise = TypeExerciseModel("Resistência"),
+            typeExercise = TypeExerciseModel("Resistência", "Força A"),
             url = "https://exemplo.com/prancha.jpg",
             creationDate = "2024-02-17",
             listExercisesSerie = listOf(
-                ExercisesSerieModel(ExerciseModel(4, "Prancha", "", TypeExerciseModel("Resistência"), "", "", listOf(), StatusEnum.COMPLETED), 3, 0, 60, StatusEnum.COMPLETED)
+                ExercisesSerieModel(ExerciseModel(4, "Prancha", "", TypeExerciseModel("Resistência", "Força A"), "", "", listOf(), StatusEnum.COMPLETED), 3, 0, 60, StatusEnum.COMPLETED)
             ),
             status = StatusEnum.COMPLETED
         ),
@@ -81,11 +81,11 @@ fun ExerciseScreen(
             id = 5,
             title = "Remada Curvada",
             description = "Exercício para costas e ombros.",
-            typeExercise = TypeExerciseModel("Força"),
+            typeExercise = TypeExerciseModel("Força", "Força A"),
             url = "https://exemplo.com/remada.jpg",
             creationDate = "2024-02-17",
             listExercisesSerie = listOf(
-                ExercisesSerieModel(ExerciseModel(5, "Remada Curvada", "", TypeExerciseModel("Força"), "", "", listOf(), StatusEnum.COMPLETED), 4, 70, 10, StatusEnum.COMPLETED )
+                ExercisesSerieModel(ExerciseModel(5, "Remada Curvada", "", TypeExerciseModel("Força", "Força A"), "", "", listOf(), StatusEnum.COMPLETED), 4, 70, 10, StatusEnum.COMPLETED )
             ),
             status = StatusEnum.COMPLETED
         )
